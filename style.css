@@ -1,0 +1,38 @@
+.title-container {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr;
+    max-width: 600px;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+.option-column {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+label {
+    margin-top: 15px;
+}
+
+select {
+    margin-top: 15px;
+}
+
+fieldset {
+    margin-top: 15px;
+}
+
+button {
+    margin-top: 15px;
+    width: 100%;
+}
+
+body {
+    background-color: cadetblue;
+}

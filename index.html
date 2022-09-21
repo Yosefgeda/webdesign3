@@ -9,46 +9,54 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
+    <div class="container">
+
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form" action="">
+    
 
-      <label for="name" id="name-label">Name</label>
-      <input placeholder="Your Name" required id="name" type="text">
-      <label for="email" id="email-label">Email</label>
-      <input placeholder="Your Email" required id="email" type="email">
-      <label for="number" id="number-label">Number</label>
-      <input max="10" min="2" placeholder="Your Number" id="number" type="number">
-
-      <select id = "dropdown" class="" name="">
-      <option value="">option one</option>
-      <option value="">option two</option>
-      </select>
-
-      <fieldset name="group1">
-      <input type="radio" name="option 1" value="one">
-      <input type="radio" name="option 2" value="two">
-      <input type="radio" name="option 3" value="three">
-      </fieldset>
-
-        <fieldset name="group2">
-            <input type="radio" name="option 1" value="one">
-            <input type="radio" name="option 2" value="two">
-            <input type="radio" name="option 3" value="three">
-            </fieldset>
-
-      <div>
-        <input type="checkbox" name="" value="one">
-          <input type="checkbox" name="" value="two">
-            <input type="checkbox" name="" value="three">
-              <input type="checkbox" name="" value="four">
+      
+      <div  class="option-column">
+        <label for="name" id="name-label">Name</label>
+        <input placeholder="Your Name" required id="name" type="text">
+        <label for="email" id="email-label">Email</label>
+        <input placeholder="Your Email" required id="email" type="email">
+        <label for="number" id="number-label">Number</label>
+        <input max="10" min="2" placeholder="Your Number" id="number" type="number">
       </div>
-      <textarea name="name" rows="8" cols="80"></textarea>
-      <button type="submit" id = "submit" name="button">SUBMIT</button>
+
+        <select id="dropdown" class="" name="">
+          <option value="">option one</option>
+          <option value="">option two</option>
+        </select>
+      
+        <fieldset class="option-column" name="group1">
+          <label for="">option 1 <input type="radio" name="option 1" value="one"></label>
+          <label for="">option 2<input type="radio" name="option 2" value="two"></label>
+          <label for="">option 3<input type="radio" name="option 3" value="three"></label>
+        </fieldset>
+      
+        <fieldset class="option-column" name="group2">
+          <label for="">option 1 <input type="radio" name="option 1" value="one"></label> 
+          <label for="">option 2 <input type="radio" name="option 2" value="two"></label> 
+          <label for="">option 3 <input type="radio" name="option 3" value="three"></label> 
+        </fieldset>
+      
+        <div class="option-column">
+          <label for="">one <input type="checkbox" name="" value="one"></label> 
+          <label for="">two <input type="checkbox" name="" value="two"></label>
+          <label for="">three <input type="checkbox" name="" value="three"></label>
+          <label for="">four <input type="checkbox" name="" value="four"></label> 
+        </div>
+        <textarea name="name" rows="8" cols="80"></textarea>
+        <button type="submit" id="submit" name="button">SUBMIT</button>
+      
+    
 
     </form>
 
-
+  </div>
 
     <script  src="js/index.js"></script>
   </body>
