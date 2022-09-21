@@ -12,9 +12,40 @@
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form" action="">
-      <input required id="name" type="text">
-      <input required id="email" type="email">
-      <input id="number" type="number">
+
+      <label for="name" id="name-label">Name</label>
+      <input placeholder="Your Name" required id="name" type="text">
+      <label for="email" id="email-label">Email</label>
+      <input placeholder="Your Email" required id="email" type="email">
+      <label for="number" id="number-label">Number</label>
+      <input max="10" min="2" placeholder="Your Number" id="number" type="number">
+
+      <select id = "dropdown" class="" name="">
+      <option value="">option one</option>
+      <option value="">option two</option>
+      </select>
+
+      <fieldset name="group1">
+      <input type="radio" name="option 1" value="one">
+      <input type="radio" name="option 2" value="two">
+      <input type="radio" name="option 3" value="three">
+      </fieldset>
+
+        <fieldset name="group2">
+            <input type="radio" name="option 1" value="one">
+            <input type="radio" name="option 2" value="two">
+            <input type="radio" name="option 3" value="three">
+            </fieldset>
+
+      <div>
+        <input type="checkbox" name="" value="one">
+          <input type="checkbox" name="" value="two">
+            <input type="checkbox" name="" value="three">
+              <input type="checkbox" name="" value="four">
+      </div>
+      <textarea name="name" rows="8" cols="80"></textarea>
+      <button type="submit" id = "submit" name="button">SUBMIT</button>
+
     </form>
 
 
